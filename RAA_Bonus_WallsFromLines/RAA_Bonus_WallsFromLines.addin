@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command RAA_Bonus_WallsFromLines</Text>
+    <Description>Some description for RAA_Bonus_WallsFromLines</Description>
+    <Assembly>RAA_Bonus_WallsFromLines.dll</Assembly>
+    <FullClassName>RAA_Bonus_WallsFromLines.Command</FullClassName>
+    <ClientId>615c2731-9f5c-4073-b669-d7770563fcc0</ClientId>
+    <VendorId>T Edward</VendorId>
+    <VendorDescription>T Edward Coder</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application RAA_Bonus_WallsFromLines</Name>
+    <Assembly>RAA_Bonus_WallsFromLines.dll</Assembly>
+    <FullClassName>RAA_Bonus_WallsFromLines.App</FullClassName>
+    <ClientId>90e0ec40-34d4-402e-a035-85350bd4a678</ClientId>
+    <VendorId>T Edward</VendorId>
+    <VendorDescription>T Edward Coder</VendorDescription>
+  </AddIn>
+</RevitAddIns>
