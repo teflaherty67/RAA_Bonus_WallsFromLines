@@ -4,7 +4,7 @@
     <Text>Command RAA_Bonus_WallsFromLines</Text>
     <Description>Some description for RAA_Bonus_WallsFromLines</Description>
     <Assembly>RAA_Bonus_WallsFromLines.dll</Assembly>
-    <FullClassName>RAA_Bonus_WallsFromLines.Command</FullClassName>
+    <FullClassName>RAA_Bonus_WallsFromLines.cmdWallsFromLines</FullClassName>
     <ClientId>615c2731-9f5c-4073-b669-d7770563fcc0</ClientId>
     <VendorId>T Edward</VendorId>
     <VendorDescription>T Edward Coder</VendorDescription>

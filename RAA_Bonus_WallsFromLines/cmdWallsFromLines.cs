@@ -25,9 +25,20 @@ namespace RAA_Bonus_WallsFromLines
             Application app = uiapp.Application;
             Document doc = uidoc.Document;
 
-
+            List<string> lineStyle = GetAllLineStyleNames(doc);
+            List<string> wallTypes = GetAllWallTypeNames(doc);
 
             return Result.Succeeded;
+        }
+
+        private List<string> GetAllLineStyleNames(Document doc)
+        {
+            throw new NotImplementedException();
+        }
+
+        private List<string> GetAllWallTypeNames(Document doc)
+        {
+            throw new NotImplementedException();
         }
     }
 }
