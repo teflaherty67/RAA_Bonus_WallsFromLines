@@ -25,8 +25,19 @@ namespace RAA_Bonus_WallsFromLines
             Application app = uiapp.Application;
             Document doc = uidoc.Document;
 
-            List<string> lineStyle = GetAllLineStyleNames(doc);
+            List<string> lineStyles = GetAllLineStyleNames(doc);
             List<string> wallTypes = GetAllWallTypeNames(doc);
+
+            frmWallsFromLines curForm = new frmWallsFromLines(lineStyles, wallTypes);
+
+            curForm.Height = 450;
+            curForm.Width = 550;
+            curForm.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+
+            if(curForm.ShowDialog() == System.Windows.Forms.DialogResult.OK )
+            {
+                //do something here
+            }
 
             return Result.Succeeded;
         }
