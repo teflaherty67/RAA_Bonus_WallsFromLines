@@ -33,12 +33,37 @@ namespace RAA_Bonus_WallsFromLines
 
         private List<string> GetAllLineStyleNames(Document doc)
         {
-            throw new NotImplementedException();
+            List<string> results = new List<string>();
+
+            FilteredElementCollector collector = new FilteredElementCollector(doc, doc.ActiveView.Id);
+            collector.OfClass(typeof(CurveElement));
+
+            foreach(CurveElement element in collector)
+            {
+                GraphicsStyle curGS = element.LineStyle as GraphicsStyle;
+
+                if(results.Contains(curGS.Name) == false)
+                {
+                    results.Add(curGS.Name);
+                }
+            }
+
+            return results;
         }
 
         private List<string> GetAllWallTypeNames(Document doc)
         {
-            throw new NotImplementedException();
+            List<string> results = new List<string>();
+
+            FilteredElementCollector collector = new FilteredElementCollector(doc);
+            collector.OfClass(typeof(WallType));
+
+            foreach(WallType wallType in collector)
+            {
+                results.Add(wallType.Name);
+            }
+
+            return results;
         }
     }
 }
