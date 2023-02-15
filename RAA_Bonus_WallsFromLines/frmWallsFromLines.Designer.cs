@@ -73,7 +73,7 @@
             this.cmbLineStyles.FormattingEnabled = true;
             this.cmbLineStyles.Location = new System.Drawing.Point(5, 50);
             this.cmbLineStyles.Name = "cmbLineStyles";
-            this.cmbLineStyles.Size = new System.Drawing.Size(600, 39);
+            this.cmbLineStyles.Size = new System.Drawing.Size(678, 39);
             this.cmbLineStyles.TabIndex = 3;
             // 
             // cmbWallTypes
@@ -83,7 +83,7 @@
             this.cmbWallTypes.FormattingEnabled = true;
             this.cmbWallTypes.Location = new System.Drawing.Point(5, 160);
             this.cmbWallTypes.Name = "cmbWallTypes";
-            this.cmbWallTypes.Size = new System.Drawing.Size(600, 39);
+            this.cmbWallTypes.Size = new System.Drawing.Size(678, 39);
             this.cmbWallTypes.TabIndex = 4;
             // 
             // tbxWallHeight
@@ -92,7 +92,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbxWallHeight.Location = new System.Drawing.Point(5, 270);
             this.tbxWallHeight.Name = "tbxWallHeight";
-            this.tbxWallHeight.Size = new System.Drawing.Size(600, 38);
+            this.tbxWallHeight.Size = new System.Drawing.Size(678, 38);
             this.tbxWallHeight.TabIndex = 5;
             // 
             // cbxStructural
@@ -109,7 +109,7 @@
             // 
             this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.Location = new System.Drawing.Point(350, 400);
+            this.btnOK.Location = new System.Drawing.Point(428, 365);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(125, 50);
             this.btnOK.TabIndex = 7;
@@ -121,7 +121,7 @@
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(500, 400);
+            this.btnCancel.Location = new System.Drawing.Point(578, 365);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(125, 50);
             this.btnCancel.TabIndex = 8;
@@ -133,7 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(668, 462);
+            this.ClientSize = new System.Drawing.Size(746, 427);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.cbxStructural);

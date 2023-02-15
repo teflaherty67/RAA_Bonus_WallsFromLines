@@ -30,8 +30,8 @@ namespace RAA_Bonus_WallsFromLines
 
             frmWallsFromLines curForm = new frmWallsFromLines(lineStyles, wallTypes);
 
-            curForm.Height = 450;
-            curForm.Width = 750;
+            curForm.Height = 550;
+            curForm.Width = 700;
             curForm.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 
             if(curForm.ShowDialog() == System.Windows.Forms.DialogResult.OK )
