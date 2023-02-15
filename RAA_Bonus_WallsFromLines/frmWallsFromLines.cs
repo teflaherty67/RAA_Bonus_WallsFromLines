@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -38,6 +39,33 @@ namespace RAA_Bonus_WallsFromLines
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        public string GetSelectedLineStyle()
+        {
+            return cmbLineStyles.SelectedItem.ToString();
+        }
+
+        public string GetSelectedWallType()
+        {
+            return cmbWallTypes.SelectedItem.ToString();
+        }
+
+        public double GetWallHeight()
+        {
+            double returnValue;
+
+            if (double.TryParse(tbxWallHeight.Text, out returnValue) == true)
+            {
+                return returnValue;
+            }
+
+            return 20;
+        }
+
+        public bool AreWallsStructural()
+        {
+            return cbxStructural.Checked;
         }
     }
 }

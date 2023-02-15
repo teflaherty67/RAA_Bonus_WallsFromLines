@@ -31,12 +31,36 @@ namespace RAA_Bonus_WallsFromLines
             frmWallsFromLines curForm = new frmWallsFromLines(lineStyles, wallTypes);
 
             curForm.Height = 450;
-            curForm.Width = 550;
+            curForm.Width = 750;
             curForm.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 
             if(curForm.ShowDialog() == System.Windows.Forms.DialogResult.OK )
             {
-                //do something here
+                string selectedLineStyle = curForm.GetSelectedLineStyle();
+                string selectedWallType = curForm.GetSelectedWallType();
+                double wallHeight = curForm.GetWallHeight();
+                bool isStructural = curForm.AreWallsStructural();
+
+                List<CurveElement> curveList = Utils.GetLinesByStyle(doc, selectedLineStyle);
+
+                WallType curWT = Utils.GetWallTypeByName(doc, selectedWallType);
+
+                Level curLevel = Utils.GetLevelFromView(doc);
+
+                using(Transaction t = new Transaction(doc))
+                {
+                    t.Start("Create Walls");
+
+                    foreach(CurveElement curve in curveList)
+                    {
+                        Curve curCurve = curve.GeometryCurve;
+
+                        Wall newWall = Wall.Create(doc, curCurve, curWT.Id,
+                            curLevel.Id, wallHeight, 0, false, isStructural);
+                    }
+
+                    t.Commit();
+                }
             }
 
             return Result.Succeeded;

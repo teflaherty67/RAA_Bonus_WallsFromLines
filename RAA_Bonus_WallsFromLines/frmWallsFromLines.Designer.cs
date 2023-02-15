@@ -68,6 +68,8 @@
             // 
             // cmbLineStyles
             // 
+            this.cmbLineStyles.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbLineStyles.FormattingEnabled = true;
             this.cmbLineStyles.Location = new System.Drawing.Point(5, 50);
             this.cmbLineStyles.Name = "cmbLineStyles";
@@ -76,6 +78,8 @@
             // 
             // cmbWallTypes
             // 
+            this.cmbWallTypes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbWallTypes.FormattingEnabled = true;
             this.cmbWallTypes.Location = new System.Drawing.Point(5, 160);
             this.cmbWallTypes.Name = "cmbWallTypes";
@@ -84,6 +88,8 @@
             // 
             // tbxWallHeight
             // 
+            this.tbxWallHeight.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbxWallHeight.Location = new System.Drawing.Point(5, 270);
             this.tbxWallHeight.Name = "tbxWallHeight";
             this.tbxWallHeight.Size = new System.Drawing.Size(600, 38);
@@ -101,6 +107,7 @@
             // 
             // btnOK
             // 
+            this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnOK.Location = new System.Drawing.Point(350, 400);
             this.btnOK.Name = "btnOK";
@@ -112,6 +119,7 @@
             // 
             // btnCancel
             // 
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.Location = new System.Drawing.Point(500, 400);
             this.btnCancel.Name = "btnCancel";
@@ -136,7 +144,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmWallsFromLines";
-            this.Text = " ";
+            this.Text = " Walls from Lines";
             this.ResumeLayout(false);
             this.PerformLayout();
 
